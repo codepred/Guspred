@@ -39,4 +39,4 @@ jobs:
           path: target/site/jacoco/index.html
 
       - name: Update dependency graph
-        uses: advanced-security/maven-dependency-submission-action@
+        uses: advanced-security/maven-dependency-submission-action@v1.0.0 # Użyj poprawnej wersji akcji
