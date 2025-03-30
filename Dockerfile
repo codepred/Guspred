@@ -4,5 +4,5 @@ COPY . .
 RUN mvn clean install -Dmaven.test.skip=true
 
 FROM openjdk:22
-COPY --from=build /build/target/qrcode-1.0.0.jar /usr/local/lib/qrcode-1.0.0.jar
-CMD ["java", "-jar", "/usr/local/lib/qrcode-1.0.0.jar"]
+COPY --from=build /build/target/Guspred-0.0.1-SNAPSHOT.jar /usr/local/lib/guspred-1.0.0.jar
+CMD ["java", "-jar", "/usr/local/lib/guspred-1.0.0.jar"]
