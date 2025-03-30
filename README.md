@@ -1,58 +1,54 @@
-![img.png](img.png)
-
-# Web app for Guspred application
-
-**Web page url:**
-[https://guspred.com/](https://guspred.com/)
+![img_1.png](img_1.png)
+# Web Application for Guspred
 
 
-**Our Website:**
-[https://codepred.pl/](https://codepred.pl/)
+## 🌐 Web Page
+- **Application URL:** [Guspred](https://guspred.com/)
+- **Our Website:** [CodePred](https://codepred.pl/)
 
+📧 **Contact Us:** [kontakt@codepred.pl](mailto:kontakt@codepred.pl)
 
+---
 
-**For more information contact us:**
-codepredpoznan@gmail.com
+## 🚀 Installation Guide
 
-
-## Installation
-
-
-## Requirements
-
-For building and running the application you need:
+### ✅ Requirements
+To build and run the application, ensure you have the following installed:
 
 - [JDK 21](https://www.oracle.com/pl/java/technologies/downloads/)
 - [Maven 3](https://maven.apache.org)
 
-Api key for gus you can get here:
+### 🔑 API Key Setup
+To use the application, you need to obtain your own GUS API Key. You can generate one here:
 
-https://api.stat.gov.pl/Home/RegonApi
+🔗 [GUS API Registration](https://api.stat.gov.pl/Home/RegonApi)
 
-Setup api key in app secrets:
+Once obtained, set the API key in your application secrets:
+```env
+GUSPRED_KEY=<your_api_key>
+```
 
-**GUSPRED_KEY:**
+---
 
-## Running the application locally
+## ▶️ Running the Application
 
-
-```shell
+### Locally
+To start the application locally, run:
+```sh
 mvn spring-boot:run
 ```
 
-## Running in docker container
-
-
-```shell
+### In a Docker Container
+To deploy using Docker, execute:
+```sh
 docker compose up -d --build
 ```
 
-## H2 Database url
-http://localhost:8080/h2-console
+### 🗄️ H2 Database Console
+Access the embedded H2 database at:
+[http://localhost:8080/h2-console](http://localhost:8080/h2-console)
 
-## Copyright
+---
 
-No copyright allowed. 
-
-
-
+## 📜 Copyright
+❌ **No copyright allowed.**
