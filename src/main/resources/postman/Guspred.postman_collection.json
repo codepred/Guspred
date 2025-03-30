@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "22931ea1-91fd-4693-9b55-1a7d34d672ce",
+		"name": "Guspred",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24995721",
+		"_collection_link": "https://infinite-tech.postman.co/workspace/Codepred~4d8ee62a-70e2-4014-8c88-c4f03842e7d4/collection/24995721-22931ea1-91fd-4693-9b55-1a7d34d672ce?action=share&source=collection_link&creator=24995721"
+	},
+	"item": [
+		{
+			"name": "Get basic data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nip",
+							"value": "7812033826",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{guspred_url}}/api/search",
+					"host": [
+						"{{guspred_url}}"
+					],
+					"path": [
+						"api",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get extended data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nip",
+							"value": "7812033826",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{guspred_url}}/api/search/detail",
+					"host": [
+						"{{guspred_url}}"
+					],
+					"path": [
+						"api",
+						"search",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
