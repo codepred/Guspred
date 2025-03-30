@@ -1,5 +1,6 @@
 package com.codepred.guspred.gus;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.http.ResponseEntity;
@@ -20,11 +21,13 @@ class GusController {
 
     GusRegonApi gusClient;
 
+    @Operation(summary = "Search company data by nip number.")
     @GetMapping("/search")
     ResponseEntity<CompanyBasicData> searchByNip(@RequestParam String nip) throws IOException {
         return ResponseEntity.ok(gusClient.searchByNip(nip));
     }
 
+    @Operation(summary = "Search detail company data by nip number.")
     @GetMapping("/search/detail")
     ResponseEntity<CompanyBasicData> searchDetailByNip(@RequestParam String nip) throws IOException {
         return ResponseEntity.ok(gusClient.searchDetailByNip(nip));
