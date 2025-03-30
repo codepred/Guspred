@@ -1,0 +1,15 @@
+services:
+  gus-pred:
+    image: gus-pred:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: gus-pred
+
+    networks:
+      - gus-pred-net
+    restart: unless-stopped
+
+networks:
+  gus-pred-net:
+    name: gus-pred-net
