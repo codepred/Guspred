@@ -5,7 +5,8 @@ services:
       context: .
       dockerfile: ./Dockerfile
     container_name: gus-pred
-
+    environment:
+      - GUSPRED_KEY=${GUSPRED_KEY}
     networks:
       - gus-pred-net
     restart: unless-stopped
